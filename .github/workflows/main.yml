@@ -7,12 +7,11 @@ on:
 jobs:
   deploy-to-gh-pages:
     name: Deploy to github pages
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: 'true'
+        uses: actions/checkout@v4s
+      
       - name: Setting up Nodejs
         uses: actions/setup-node@v4
         with:
