@@ -11,8 +11,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          submodules: 'true'
       - name: Setting up Nodejs
         uses: actions/setup-node@v4
         with:
