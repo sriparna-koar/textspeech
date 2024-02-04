@@ -1,4 +1,4 @@
-// FileSummarizer.jsx
+
 import React, { useState } from 'react';
 import { useDropzone } from 'react-dropzone';
 
@@ -31,25 +31,19 @@ const FileSummarizer = () => {
     };
   
     const analyzeText = (text) => {
-      // Calculate word count and character count
+
       const words = text.split(/\s+/).filter((word) => word.length > 0);
       setWordCount(words.length);
       setCharCount(text.length);
     };
     const summarizeText = (text) => {
-      // Set the entire text as the summary
-      setSummary(text);
+
     };
     
-    // const summarizeText = (text) => {
-    //   // Implement your advanced text summarization logic here
-    //   // For simplicity, let's return the first 100 characters as a summary
-    //   const summarizedText = text.substring(0, 100);
-    //   setSummary(summarizedText);
-    // };
+ 
   
     const downloadSummary = () => {
-      // Create a Blob containing the summary and trigger download
+
       const blob = new Blob([summary], { type: 'text/plain' });
       const link = document.createElement('a');
       link.href = URL.createObjectURL(blob);
@@ -61,7 +55,7 @@ const FileSummarizer = () => {
   
     const { getRootProps, getInputProps } = useDropzone({
       onDrop,
-      accept: '.txt', // Accept only files with .txt extension
+      accept: '.txt', 
     });
   
     return (
