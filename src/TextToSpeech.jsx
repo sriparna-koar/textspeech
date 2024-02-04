@@ -1,6 +1,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
-
+import './text.css';
 const TextToSpeech = () => {
   const [text, setText] = useState('');
   const [speaking, setSpeaking] = useState(false);

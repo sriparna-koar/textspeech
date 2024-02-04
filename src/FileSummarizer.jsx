@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { useDropzone } from 'react-dropzone';
-
+import './file.css';
 const FileSummarizer = () => {
     const [text, setText] = useState('');
     const [summary, setSummary] = useState('');
@@ -59,7 +59,7 @@ const FileSummarizer = () => {
     });
   
     return (
-      <div>
+      <div className="file-summarizer-container">
         <h1>File Summarizer</h1>
         <div {...getRootProps()} style={dropzoneStyle}>
           <input {...getInputProps()} />
