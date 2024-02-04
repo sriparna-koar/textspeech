@@ -37,7 +37,7 @@ const FileSummarizer = () => {
       setCharCount(text.length);
     };
     const summarizeText = (text) => {
-
+      setSummary(text);
     };
     
  

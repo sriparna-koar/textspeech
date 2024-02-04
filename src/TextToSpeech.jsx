@@ -90,7 +90,8 @@ const TextToSpeech = () => {
   };
 
   return (
-    <div>
+    <div className="text-to-speech-container">
+      <h1>Text To speech</h1>
       <textarea
         value={text}
         onChange={(e) => setText(e.target.value)}
